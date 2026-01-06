@@ -3,7 +3,7 @@
 
     <PropertyGroup>
         <!--This needs to be changed for the mod to compile.-->
-        <TheLongDarkPath>C:\Program Files (x86)\Steam\steamapps\content\app_305620\depot_305621</TheLongDarkPath>
+        <TheLongDarkPath>E:\Steam Library\steamapps\common\TheLongDark</TheLongDarkPath>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -47,14 +47,15 @@
 
     <!--This is the list of assemblies that the mod references. Most of these are unnecessary for normal mods, but are included here for completeness.-->
   <ItemGroup>
-    <PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.42.0" />
-    <PackageReference Include="STBlade.Modding.TLD.ModComponent" Version="6.2.3" />
-    <PackageReference Include="STBlade.Modding.TLD.ModSettings" Version="1.9.0" />
+    <PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.51.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="ComplexLogger">
       <HintPath>$(TheLongDarkPath)\Mods\ComplexLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="ModSettings">
+      <HintPath>$(TheLongDarkPath)\Mods\ModSettings.dll</HintPath>
     </Reference>
   </ItemGroup>
 

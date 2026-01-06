@@ -33,7 +33,7 @@ namespace RuinedMending
 			UILabel itemLabel = itemDescriptionPage.m_ItemDescLabel;
 			hintLabel = UnityEngine.Object.Instantiate<UILabel>(itemLabel, itemLabel.transform.parent, true);
 			hintLabel.text = "";
-			hintLabel.transform.Translate(0, -1.3f, 0);
+			hintLabel.transform.Translate(0, -1.35f, 0);
 			hintLabel.color = Color.red;
 			hintLabel.enabled = false;
 		}

@@ -30,7 +30,6 @@ namespace RuinedMending
 
 			for (int i = 0; i < requiredAmount.Length; i++)
 			{
-				//TODO Add setting to modify how many materials are required.
 				requiredAmount[i] *= Settings.options.restoreMaterialMultiplier;
 			}
 
@@ -66,6 +65,8 @@ namespace RuinedMending
 		internal static bool CanRestore(GearItem gi, bool silent = true)
 		{
 			if (gi == null) return false; //GearItem is null
+
+			//TODO Add light check here
 
 			//Check if the player has all the required restore materials in their inventory.
 			GearItem[] requiredMaterials = LookupRequiredRestoreGear(gi);
